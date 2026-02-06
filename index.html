@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class 11 Accountancy Online Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="school-header">
+        <h1>PATNA MUSLIM HIGH SCHOOL (10+2)</h1>
+        <p>Ashok Rajpath, Patna – 800002</p>
+    </div>
+
+    <h2 id="examTitle">Class 11 Accountancy Online Test</h2>
+
+    <div class="top-bar">
+        ⏱ Time Left: <span id="timer">10:00</span>
+        <button onclick="toggleLanguage()">हिंदी / English</button>
+    </div>
+
+    <div id="startBox">
+        <input type="text" id="studentName" placeholder="Enter Student Name">
+        <button onclick="startExam()">Start Test</button>
+    </div>
+
+    <div id="examBox" style="display:none;">
+        <h3 id="question"></h3>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="submitTest()">Submit Test</button>
+    </div>
+
+    <div id="resultBox" style="display:none;"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
